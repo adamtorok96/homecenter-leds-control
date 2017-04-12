@@ -1,0 +1,5 @@
+#!/bin/sh
+
+gcc -o red main.c -D RED -lwiringPi -lpthread
+gcc -o red main.c -D GREEN -lwiringPi -lpthread
+gcc -o red main.c -D BLUE -lwiringPi -lpthread
