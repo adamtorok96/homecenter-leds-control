@@ -17,11 +17,11 @@ int main(int argc, char * args[]) {
         return 1;
 
 #ifdef RED
-    softPwmWrite(0, value);
+    softPwmWrite(12, value);
 #elif GREEN
-    softPwmWrite(0, value);
+    softPwmWrite(13, value);
 #elif BLUE
-    softPwmWrite(0, value);
+    softPwmWrite(14, value);
 #endif
 
     return 0;
