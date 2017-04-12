@@ -18,11 +18,11 @@ int main(int argc, char * args[]) {
 
 #ifdef RED
     softPwmWrite(0, value);
-#elseif GREEN
+#elif GREEN
     softPwmWrite(0, value);
-#elseif BLUE
+#elif BLUE
     softPwmWrite(0, value);
-#else
+#endif
 
     return 0;
 }
