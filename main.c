@@ -35,5 +35,7 @@ int main(int argc, char * args[]) {
     printf("Led(%d): %d\n", PIN_BLUE, value);
 #endif
 
+    delay(50);
+
     return 0;
 }
