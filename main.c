@@ -3,6 +3,10 @@
 #include <wiringPi.h>
 #include <softPwm.h>
 
+#define PIN_RED 10
+#define PIN_GREEN 9
+#define PIN_BLUE 11
+
 int main(int argc, char * args[]) {
 
     if( argc != 2 )
@@ -17,14 +21,14 @@ int main(int argc, char * args[]) {
         return 1;
 
 #ifdef RED
-    softPwmCreate(12, 0, 100);
-    softPwmWrite(12, value);
+    softPwmCreate(PIN_RED, 0, 100);
+    softPwmWrite(PIN_RED, value);
 #elif GREEN
-    softPwmCreate(13, 0, 100);
-    softPwmWrite(13, value);
+    softPwmCreate(PIN_GREEN, 0, 100);
+    softPwmWrite(PIN_GREEN, value);
 #elif BLUE
-    softPwmCreate(14, 0, 100);
-    softPwmWrite(14, value);
+    softPwmCreate(PIN_BLUE, 0, 100);
+    softPwmWrite(PIN_BLUE, value);
 #endif
 
     return 0;
