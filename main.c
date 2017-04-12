@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <stdlib.h>
 
 #include <wiringPi.h>
@@ -23,12 +24,15 @@ int main(int argc, char * args[]) {
 #ifdef RED
     softPwmCreate(PIN_RED, 0, 100);
     softPwmWrite(PIN_RED, value);
+    printf("Led(%d): %d\n", PIN_RED, value);
 #elif GREEN
     softPwmCreate(PIN_GREEN, 0, 100);
     softPwmWrite(PIN_GREEN, value);
+    printf("Led(%d): %d\n", PIN_GREEN, value);
 #elif BLUE
     softPwmCreate(PIN_BLUE, 0, 100);
     softPwmWrite(PIN_BLUE, value);
+    printf("Led(%d): %d\n", PIN_BLUE, value);
 #endif
 
     return 0;
