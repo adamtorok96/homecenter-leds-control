@@ -5,7 +5,7 @@
 #include <softPwm.h>
 
 //12
-#define PIN_RED 19
+#define PIN_RED 10
 #define PIN_GREEN 13
 #define PIN_BLUE 14
 
