@@ -3,9 +3,9 @@
 #include <wiringPi.h>
 #include <softPwm.h>
 
-#define PIN_RED 10
-#define PIN_GREEN 9
-#define PIN_BLUE 11
+#define PIN_RED 19
+#define PIN_GREEN 21
+#define PIN_BLUE 23
 
 int main(int argc, char * args[]) {
 
