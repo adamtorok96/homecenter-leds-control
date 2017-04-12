@@ -4,7 +4,8 @@
 #include <wiringPi.h>
 #include <softPwm.h>
 
-#define PIN_RED 12
+//12
+#define PIN_RED 19
 #define PIN_GREEN 13
 #define PIN_BLUE 14
 
