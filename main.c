@@ -13,7 +13,7 @@ int main(int argc, char * args[]) {
     if( argc != 2 )
         return 1;
 
-    if( wiringPiSetup() == -1 )
+    if( wiringPiSetupSys() == -1 )
         return 1;
 
     int value = atoi(args[1]);
